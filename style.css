@@ -1,0 +1,163 @@
+.navbar{
+    
+   
+     display: flex;
+     justify-content: space-between;
+     margin-left: 2rem;
+     margin-right: 2rem;
+}
+.navbar .left{
+ 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+}
+
+
+.navbar .right{
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navbar .right a{
+    margin: 0.5rem;
+}
+.navbar .right button{
+    margin: 0.5rem;
+}
+.navbar .left ul{
+  
+    display: flex;
+    list-style: none;
+}
+.navbar .left ul li{
+    
+    margin: 1rem;
+}
+li:hover{
+    color: rgb(255, 102, 0);
+}
+button:hover{
+    color: red;
+}
+.MENU:hover{
+    background-color: darkorchid;
+}
+.content  {
+    
+     display: flex;
+     padding: 10px 40px 10px 40px;
+     overflow: hidden;  
+    
+}
+.slide{
+    flex: 0 0 auto;
+    width: 100%;
+    animation: slide 10s infinite;
+
+}  
+@keyframes slide {
+    0%{
+        transform: translate(0);
+    }
+   25%{
+        transform: translate(-100%);
+    }
+    50%{
+        transform: translate(-200%);
+    }
+    75%{
+        transform: translate(-300%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+
+.confetti{
+   position:absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url('confetti1.png');
+   background-size: cover;
+   display: none;
+ }
+
+
+
+.row{
+    
+     display: flex;
+     justify-items:center ;
+     margin: 0;
+     padding: 0;
+   
+}
+.image{
+    flex: 1;
+    text-align: center;
+    border: 2px solid lightgray;
+    padding: 10px 5PX 10px 5px;
+    margin: 10px;
+    border-radius: 10px;
+    
+}
+.image .img{
+    max-width: 100%;
+    height: auto;
+
+}
+ h2{
+    color: brown;
+    padding :20px;
+}
+h4{
+    color: brown;
+    padding :10px;
+}
+button{
+    font-family:'Open Sans', sans-serif ;
+    color: black;
+    background-color: orange;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 5px;
+   
+     transition: opacity .2s;
+}
+
+    
+button:hover {
+    cursor: pointer;
+    background: #053056;
+    }
+.footer{
+    color: blueviolet;
+    flex: 1;
+    display: flex;
+    background-color: lightgrey; 
+    align-items: center;
+    padding:20px;
+    
+    
+}
+
+  
+
+
+
+#drawing_canvas {
+    position: absolute;
+    margin: auto;
+    width: 512px;
+    height: 350px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
